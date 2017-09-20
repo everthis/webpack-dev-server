@@ -6,11 +6,13 @@
       "type": "boolean"
     },
     "hotOnly": {
-      "description": "Enables Hot Module Replacement without page refresh as fallback.",
+      "description":
+        "Enables Hot Module Replacement without page refresh as fallback.",
       "type": "boolean"
     },
     "lazy": {
-      "description": "Disables watch mode and recompiles bundle only on a request.",
+      "description":
+        "Disables watch mode and recompiles bundle only on a request.",
       "type": "boolean"
     },
     "bonjour": {
@@ -22,14 +24,16 @@
       "type": "string"
     },
     "allowedHosts": {
-      "description": "Specifies which hosts are allowed to access the dev server.",
+      "description":
+        "Specifies which hosts are allowed to access the dev server.",
       "items": {
         "type": "string"
       },
       "type": "array"
     },
     "filename": {
-      "description": "The filename that needs to be requested in order to trigger a recompile (only in lazy mode).",
+      "description":
+        "The filename that needs to be requested in order to trigger a recompile (only in lazy mode).",
       "anyOf": [
         {
           "instanceof": "RegExp"
@@ -58,6 +62,10 @@
       "description": "The Unix socket to listen to (instead of on a host).",
       "type": "string"
     },
+    "sockjsPrefix": {
+      "description": "Optional prefix for the sockjs handler to be mounted to.",
+      "type": "string"
+    },
     "watchOptions": {
       "description": "Options for changing the watch behavior.",
       "type": "object"
@@ -71,12 +79,7 @@
     },
     "clientLogLevel": {
       "description": "Controls the log messages shown in the browser.",
-      "enum": [
-        "none",
-        "info",
-        "warning",
-        "error"
-      ]
+      "enum": ["none", "info", "warning", "error"]
     },
     "overlay": {
       "description": "Shows an error overlay in browser.",
@@ -150,11 +153,13 @@
       "type": "string"
     },
     "requestCert": {
-      "description": "Enables request for client certificate. This is passed directly to the https server.",
+      "description":
+        "Enables request for client certificate. This is passed directly to the https server.",
       "type": "boolean"
     },
     "inline": {
-      "description": "Enable inline mode to include client scripts in bundle (CLI-only).",
+      "description":
+        "Enable inline mode to include client scripts in bundle (CLI-only).",
       "type": "boolean"
     },
     "disableHostCheck": {
@@ -187,9 +192,7 @@
           "type": "array"
         },
         {
-          "enum": [
-            false
-          ]
+          "enum": [false]
         },
         {
           "type": "number"
@@ -219,7 +222,8 @@
       "type": "boolean"
     },
     "openPage": {
-      "description": "Let the CLI open your browser to a specific page on the site.",
+      "description":
+        "Let the CLI open your browser to a specific page on the site.",
       "type": "string"
     },
     "features": {
@@ -271,7 +275,8 @@
       "type": "object"
     },
     "setup": {
-      "description": "Exposes the Express server to add custom middleware or routes.",
+      "description":
+        "Exposes the Express server to add custom middleware or routes.",
       "instanceof": "Function"
     },
     "stats": {
@@ -284,13 +289,7 @@
           "type": "boolean"
         },
         {
-          "enum": [
-            "none",
-            "errors-only",
-            "minimal",
-            "normal",
-            "verbose"
-          ]
+          "enum": ["none", "errors-only", "minimal", "normal", "verbose"]
         }
       ]
     },
