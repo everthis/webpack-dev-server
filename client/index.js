@@ -37,7 +37,7 @@ if (typeof __resourceQuery === 'string' && __resourceQuery) {
   const wpp = __webpack_public_path__
   const re = /^\/(static)(.*)/
   wsp = wpp.replace(re, function(...args) {
-    return `/ws${args[2]}`
+    return `/ws/webpack${args[2]}`
   })
   urlParts = url.parse(__resourceQuery.substr(1))
 } else {
